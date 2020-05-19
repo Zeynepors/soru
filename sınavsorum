@@ -1,0 +1,60 @@
+package sınavsorusu;
+import java.util.Scanner;
+
+public class sınavsoru {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+        System.out.println("Lütfen beden belirtiniz:");
+        String beden= scan.nextLine();
+        System.out.println("Lütfen boyunuzu giriniz(cm):");
+        double boy =scan.nextDouble();
+        System.out.println("Lütfen kilonuzu giriniz(kg):");
+        double kilo =scan.nextDouble();
+        
+        double ort=boy/kilo;
+         if (beden.equals("1")) {
+            if (ort>2) {
+                System.out.println("Kıyafet uyumlu değil. Lütfen başka beden seçiniz");  
+                 
+            }
+            else
+                System.out.println("Beden seçimi uyumlu.Kıyafeti tercih edebilirsiniz. ");
+        }
+        if (beden.equals("2")) {
+            if (ort>3) {
+                System.out.println("Kıyafet uyumlu değil. Lütfen başka beden seçiniz");  
+                 
+            }
+            else
+                System.out.println("Beden seçimi uyumlu.Kıyafeti tercih edebilirsiniz. ");
+        }
+        if (beden.equals("3")) {
+            if (ort>4) {
+                System.out.println("Kıyafet uyumlu değil. Lütfen başka beden seçiniz");  
+                 
+            }
+            else
+                System.out.println("Beden seçimi uyumlu.Kıyafeti tercih edebilirsiniz. ");
+
+        }
+         if (beden.equals("4")) {
+            if (ort>5) {
+                System.out.println("Kıyafet uyumlu değil. Lütfen başka beden seçiniz");  
+                 
+            }
+            else
+                System.out.println("Beden seçimi uyumlu.Kıyafeti tercih edebilirsiniz. ");
+        }
+        else {
+            if(beden.equals("1") || beden.equals("2") || beden.equals("3") || beden.equals("4"))
+            {
+                System.out.println("Beden seçimi bulunmakta.");
+            }
+            else{
+                 System.out.println("Beden bulunmamakta.");
+            }
+               
+        }
+
+	}
